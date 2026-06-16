@@ -276,7 +276,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Updates tag metadata (admin only)",
+                "description": "Returns tag metadata without persisting changes (tags are immutable except for deletion)",
                 "consumes": [
                     "application/json"
                 ],
@@ -2528,7 +2528,7 @@ const docTemplate = `{
                         "BearerAuth": []
                     }
                 ],
-                "description": "Returns usage statistics for all tags",
+                "description": "Returns usage statistics for all tags (not yet implemented; always returns an empty array)",
                 "produces": [
                     "application/json"
                 ],

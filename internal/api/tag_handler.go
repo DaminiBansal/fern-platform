@@ -177,8 +177,8 @@ func (h *TagHandler) getTagByName(c *gin.Context) {
 }
 
 // updateTag godoc
-// @Summary      Update a tag
-// @Description  Updates tag metadata (admin only)
+// @Summary      Get tag metadata (tags are immutable)
+// @Description  Returns tag metadata without persisting changes (tags are immutable except for deletion)
 // @Tags         tags,admin
 // @Accept       json
 // @Produce      json
@@ -271,7 +271,7 @@ func (h *TagHandler) listTags(c *gin.Context) {
 
 // getTagUsageStats godoc
 // @Summary      Get tag usage statistics
-// @Description  Returns usage statistics for all tags
+// @Description  Returns usage statistics for all tags (not yet implemented; always returns an empty array)
 // @Tags         tags
 // @Produce      json
 // @Success      200  {array}   map[string]interface{}

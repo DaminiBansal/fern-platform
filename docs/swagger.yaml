@@ -360,7 +360,8 @@ paths:
     put:
       consumes:
       - application/json
-      description: Updates tag metadata (admin only)
+      description: Returns tag metadata without persisting changes (tags are immutable
+        except for deletion)
       parameters:
       - description: Tag ID
         in: path
@@ -1819,7 +1820,8 @@ paths:
       - tags
   /api/v1/tags/usage-stats:
     get:
-      description: Returns usage statistics for all tags
+      description: Returns usage statistics for all tags (not yet implemented; always
+        returns an empty array)
       produces:
       - application/json
       responses:

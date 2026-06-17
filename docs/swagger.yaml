@@ -402,7 +402,7 @@ paths:
             type: object
       security:
       - BearerAuth: []
-      summary: Update a tag
+      summary: Get tag metadata (tags are immutable)
       tags:
       - tags
       - admin

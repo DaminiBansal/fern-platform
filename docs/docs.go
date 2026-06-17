@@ -287,7 +287,7 @@ const docTemplate = `{
                     "tags",
                     "admin"
                 ],
-                "summary": "Update a tag",
+                "summary": "Get tag metadata (tags are immutable)",
                 "parameters": [
                     {
                         "type": "string",
